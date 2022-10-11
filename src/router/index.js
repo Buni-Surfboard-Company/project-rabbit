@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
+import SurfboardsView from '../views/SurfboardsView.vue'
+
 const routes = [
   {
     path: '/',
@@ -38,12 +40,31 @@ const routes = [
   {
     path: '/privacy',
     component: () =>import(/* webpackChunkName: "about" */ '../views/PrivacyPolicyView.vue')
+  },
+  {
+    path: '/events',
+    component: () =>import(/* webpackChunkName: "about" */ '../views/EventsView.vue')
+  },
+  {
+    path: '/contact',
+    component: () =>import(/* webpackChunkName: "about" */ '../views/ContactView.vue')
+  },
+  {
+    path: '/products',
+    component: () =>import(/* webpackChunkName: "about" */ '../views/ProductView.vue')
+  },
+  {
+    path: '/surfboards',
+    component: SurfboardsView
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior() {
+    document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+  }
 })
 
 export default router

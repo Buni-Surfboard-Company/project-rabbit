@@ -8,7 +8,7 @@
   </div>
     <div class="flex flex-column lg:flex-row grid-nogutter surface-section text-800 justify-content-center align-items-center h-auto">
         <div data-aos="fade-right" class="pb-3 col-12 md:col-3 overflow-hidden">
-            <img src="https://img2.fonwall.ru/o/vt/haystack-rock-cannon-beach-oregon.jpg" class="border-circle w-100 md:ml-auto block md:h-full" alt="" style="">
+            <img src="@/assets/images/rock.jpeg" class="border-circle w-100 md:ml-auto block md:h-full" alt="" style="">
         </div>
         <div data-aos="fade-right" class="col-12 md:col-6 p-6 text-center md:text-left">
             <section>
@@ -85,7 +85,7 @@ It took 7 people to make that first board. It was entirely hand-shaped by surfor
             <img src="@/assets/images/mason-glassin.png" alt="Image" class="w-100 md:ml-auto block md:h-full" style="clip-path: polygon(0% 0, 100% 0%, 92% 100%, 0 100%)">
         </div>
     </div>
-    <div class="grid grid-nogutter surface-section text-800 h-30rem flex align-items-center justify-content-center">
+    <div class="bg-dark flex flex-column lg:flex-row grid-nogutter text-800 justify-content-center align-items-center">
         <div data-aos="fade-right" class="col-12 md:col-6 p-6 text-center md:text-left">
             <section>
                 <span class="block sm:text-3xl lg:text-5xl text-primary font-bold mb-1 text-center">Buni Downtime</span>
@@ -144,10 +144,10 @@ Once Fall of 2021 came around, we knew it was time for Buni to finally materiali
             </section>
         </div>
         <div data-aos="fade-right" class="overflow-hidden lg:flex-order-0">
-            <img src="@/assets/images/daShop.png" alt="Image" class="w-100 md:ml-auto block md:h-full" style="clip-path: polygon(0% 0, 100% 0%, 92% 100%, 0 100%)">
+            <img src="@/assets/images/daShop.webp" alt="Image" class="w-100 md:ml-auto block md:h-full" style="clip-path: polygon(0% 0, 100% 0%, 92% 100%, 0 100%)">
         </div>
     </div>
-    <div class="flex flex-column lg:flex-row grid-nogutter surface-section text-800 justify-content-center md:align-items-center h-auto">
+    <div class="flex flex-column lg:flex-row grid-nogutter surface-section text-800 justify-content-center md:align-items-center">
         <div class="col-12 md:col-6 p-6 text-center md:text-left">
             <section>
                 <div class="block sm:text-2xl md:text-3xl  lg:text-5xl text-primary font-bold mb-1 text-center">So Here We Are</div>
@@ -157,7 +157,7 @@ At the end of the day, we are seven shitheads that want to have some fun, share 
                 <p class="sm:text-2xl md:text-3xl text-primary font-bold mb-1 text-center">- Parker Conrad</p>
             </section>
         </div>
-        <div class="h-25rem col-6 md:col-3 overflow-hidden flex-order-0 pt-4 pr-3">
+        <div class="h-25rem col-10 md:col-3 lg:col-3 overflow-hidden flex-order-0 pt-4 pr-3" style="align-self: center">
             <GoogleMap
             :api-key="key"
             :styles="theme"

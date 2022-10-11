@@ -1,5 +1,5 @@
 <template>
-<div class="pt-5">
+<div class="pt-5" style="margin: auto; width: 75%;">
   <contact-form/>
 </div>
 </template>

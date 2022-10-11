@@ -1,16 +1,16 @@
 <template>
 
-  <Menubar class="bg-dark sticky w-auto z-5 top-0 text-2xl" style="border-radius: 0; font-family: 'Bebas Neue'" :model="navItems">
+  <Menubar class="bg-dark sticky w-auto z-5 top-0 text-2xl" style="border-radius: 0; font-family: 'Bebas Neue'" :model="items">
     <template #start>
-      <router-link to="/">
-      <img alt="logo" src="@/assets/images/bunilogo.svg" height="50" class="mr-2">
-      </router-link>
+      <a href="/">
+      <img alt="logo" src="@/assets/images/bunilogo.svg" class="mr-2 h-2rem md:h-2rem lg:h-3rem">
+      </a>
     </template>
     <template #end>
       <div class="flex mr-8 pr-3 w-full justify-content-evenly">
-      <a class="text-primary flex-order-1" v-tooltip.bottom="'(503) 739-2739'"><font-awesome-icon :icon="['fas', 'phone']" size="xl"/></a>
-      <a class="text-primary flex-order-2" v-tooltip.bottom="'@buniboards'" target="_blank" href="https://www.instagram.com/buniboards/"><font-awesome-icon :icon="['fab', 'instagram']" size="xl"/></a>
-      <a class="text-primary flex-order-1" v-tooltip.bottom="'buniboards@gmail.com'" href="mailto:buniboards@gmail.com"><font-awesome-icon :icon="['fas', 'envelope']" size="xl"/></a>
+      <a class="text-primary flex-order-1" v-tooltip.bottom="'(503) 739-2739'" href="tel:503-739-2739"><font-awesome-icon :icon="['fas', 'phone']"/></a>
+      <a class="text-primary flex-order-2" v-tooltip.bottom="'@buniboards'" target="_blank" href="https://www.instagram.com/buniboards/"><font-awesome-icon :icon="['fab', 'instagram']"/></a>
+      <a class="text-primary flex-order-1" v-tooltip.bottom="'info@buniboards.com'" href="mailto:info@buniboards.com"><font-awesome-icon :icon="['fas', 'envelope']"/></a>
       </div>
     </template>
   </Menubar>
@@ -23,12 +23,12 @@
     <div class="container py-5">
       <div class="row py-4">
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="@/assets/images/bunilogo.svg" alt="" width="180" class="mb-3">
-          <p class="font-italic text-muted">Some shit about our mission statement. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          <p class="font-italic text-muted">A collective of 7 free surfers from around the word providing ecofriendly, handshaped surfboards</p>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-3 text-2xl text-primary">Our Story</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="#" class="text-muted">Contact Us</a></li>
+            <li class="mb-2"><a href="/contact" class="text-muted">Contact Us</a></li>
             <li class="mb-2"><a href="/ourstory" class="text-muted">Our Story</a></li>
             <li class="mb-2"><a href="/sustainability" class="text-muted">Buni and Sustainability</a></li>
           </ul>
@@ -36,28 +36,28 @@
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-3 text-2xl text-primary">Services</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="#" class="text-muted">Custom Boards</a></li>
+            <li class="mb-2"><a href="/surfboards" class="text-muted">Custom Boards</a></li>
             <li class="mb-2"><a href="/repairs" class="text-muted">Repairs</a></li>
-            <li class="mb-2"><a href="#" class="text-muted">Events</a></li>
+            <li class="mb-2"><a href="/events" class="text-muted">Events</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-3 text-2xl text-primary">Our Products</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="#" class="text-muted">Surfboards</a></li>
-            <li class="mb-2"><a href="#" class="text-muted">Shirts</a></li>
-            <li class="mb-2"><a href="#" class="text-muted">Waste Products</a></li>
+            <li class="mb-2"><a href="/surfboards" class="text-muted">Surfboards</a></li>
+            <li class="mb-2"><a href="/products" class="text-muted">Shirts</a></li>
+            <li class="mb-2"><a href="/products" class="text-muted">Waste Products</a></li>
           </ul>
         </div>
       </div>
         <div class="row-py4">
           <h6 class="text-uppercase font-weight-bold mb-3 text-2xl text-primary">Newsletter</h6>
-          <p class="text-muted mb-4">Sign Up Fuckers.</p>
+          <p class="text-muted mb-4">Sign Up To Be Apart of Our Journey!</p>
           <div class="p-1 rounded border">
             <div class="input-group">
-              <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+              <input type="email" v-model="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
               <div class="input-group-append">
-                <button id="button-addon1" type="submit" class="btn btn-link"><i class="pi pi-send text-primary"></i></button>
+                <button id="button-addon1" @click="subscribe" type="submit" class="btn btn-link"><i class="pi pi-send text-primary"></i></button>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
                                     <a href="/privacy">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contact</a>
+                                    <a href="/contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -100,47 +100,64 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from 'vue' 
+import { functions } from "@/firebase"
+import { httpsCallable } from "firebase/functions"
+
 export default {
   setup() {
-    const navItems = ref([
+    const email = ref("")
+    const items = ref([
       {
-        label: 'Surfboards'
+        label: 'Surfboards',
+        url: '/surfboards'
       },
       {
-        label: 'Eco-Products'
+        label: 'Eco-Products',
+        to: '/products'
       },
       {
         label: 'Services',
         items: [
           {
-            label: 'Custom Boards'
+            label: 'Custom Boards', 
+            to: '/surfboards'
           },
           {
             label: 'Repairs',
-            url: '/repairs'
+            to: '/repairs'
           },
           {
-            label: 'Events'
+            label: 'Events',
+            to: '/events'
           }
         ]
       },
       {
         label: 'Our Story',
-        url: '/ourstory'
+        to: '/ourstory'
       },
       {
         label: 'Meet The Team',
-        url: '/team'
+        to: '/team'
       },
       {
         label: 'Buni & Sustainability',
-        url: '/sustainability'
+        to: '/sustainability'
       }
     ])
 
+    function subscribe(){ 
+      //TODO: Add validation
+      const addSubscriber = httpsCallable(functions, 'addSubscriber')
+      addSubscriber({ fname: "", lname:"", email: email.value})
+      email.value = ""
+    }
+
     return {
-      navItems
+      items, 
+      email,
+      subscribe
     }
   },
 }
@@ -159,6 +176,7 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
+  background-color: #212529;
 }
 
 nav {

@@ -58,7 +58,7 @@ On top of this, we use ECOBOARD certified Bio-Resin which avoids the harvest of 
   <div class="story p-8">
     <p class="text-900 sm:text-2xl lg:text-3xl line-height-3 text-left m-auto">
 Finally, any resin that does not make it onto a board becomes useful for the construction of 
-  our unique line of shot glasses, coasters, and dildos.
+  our unique line of shot glasses, coasters, and plant pots.
     </p>
   </div>
 
@@ -72,7 +72,7 @@ Finally, any resin that does not make it onto a board becomes useful for the con
     <p class="text-900 sm:text-2xl lg:text-3xl line-height-3 text-left m-auto">
 Eventually we want to address the small percentage of waste that we 
   cannot currently repurpose, but for the time being we’ll make sure to keep our local beaches clean and our waters free of 
-  Israeli extremists. 
+  toxins. 
     </p>
   </div>
 

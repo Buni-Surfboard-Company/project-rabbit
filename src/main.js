@@ -21,12 +21,14 @@ import ProgressBar from 'primevue/progressbar'
 import ProgressSpinner from 'primevue/progressspinner'
 import Toast from 'primevue/toast'
 import Image from 'primevue/image'
+import InputMask from 'primevue/inputmask';
+
+import VCalendar from 'v-calendar';
 
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faPhone, faEnvelope, faEarthAmerica, faRecycle, faHeart, faFaceGrinWide, faPlus, faEquals, faFaceLaughBeam } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faEarthAmerica, faRecycle, faHeart, faFaceGrinWide, faPlus, faEquals, faFaceLaughBeam, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faPhone, faInstagram, faEnvelope, faEarthAmerica, faRecycle, faHeart, faFaceGrinWide, faPlus, faEquals, faFaceLaughBeam)
-
+library.add(faPhone, faInstagram, faEnvelope, faEarthAmerica, faRecycle, faHeart, faFaceGrinWide, faPlus, faEquals, faFaceLaughBeam, faHeart, faLocationDot)
 
 import 'aos/dist/aos.css'
 
@@ -35,7 +37,7 @@ import 'primevue/resources/themes/bootstrap4-dark-blue/theme.css'       //theme
 import 'primevue/resources/primevue.min.css'                 //core css
 import 'primeicons/primeicons.css'
 
-console.log(process.env.VUE_APP_MAP_KEY)
+import 'v-calendar/dist/style.css';
 
 AOS.init()
 createApp(App)
@@ -49,6 +51,7 @@ createApp(App)
 .component('ProgressSpinner', ProgressSpinner)
 .component('Toast', Toast)
 .component('Image', Image)
+.component("InputMask", InputMask)
 .directive('tooltip', Tooltip)
-.use(store).use(router).use(VueKinesis).component("font-awesome-icon", FontAwesomeIcon).use(ToastService).use(PrimeVue)
+.use(store).use(VCalendar, {}).use(router).use(VueKinesis).component("font-awesome-icon", FontAwesomeIcon).use(ToastService).use(PrimeVue)
 .mount('#app')

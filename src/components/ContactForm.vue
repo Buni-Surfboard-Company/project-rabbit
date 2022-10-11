@@ -2,33 +2,33 @@
     <Toast/>
     <form @submit.prevent="onSubmit(!v$.$invalid)" class="p-fluid">
     <div class="pt-7 shadow-6 flex flex-column justify-content-around align-items-center bg-primary w-9 m-auto mb-8" style="height: 100vh; outline: auto">
-        <h2>Contact Form</h2>
-            <div class="field" style="width:50vw">
+        <h2 class="text-dark">Contact Form</h2>
+            <div class="field" style="width:75%">
                 <span class="p-float-label">
-                    <InputText id="name" class="text-box" v-model="v$.name.$model" :class="{'p-invalid':v$.name.$invalid && submitted}" />
-                   <label for="name" class="text-xl" :class="{'p-error':v$.name.$invalid && submitted}">Name*</label>
+                    <InputText id="name" class="" v-model="v$.name.$model" :class="{'p-invalid':v$.name.$invalid && submitted}" />
+                   <label for="name" class="md:text-xl" :class="{'p-error':v$.name.$invalid && submitted}">Name*</label>
                 </span>
                 <small class="text-lg" v-if="(v$.name.$invalid && submitted) || v$.name.$pending.$response" :class="p-error">{{v$.name.required.$message.replace('Value', 'Name')}}</small>
             </div>
-            <div class="field" style="width:50vw">
+            <div class="field" style="width:75%">
                 <span class="p-float-label">
-                    <InputText class="text-box" id="email" type="email" v-model="v$.email.$model" :class="{'p-invalid':v$.email.$invalid && submitted}"/>
+                    <InputText class="" id="email" type="email" v-model="v$.email.$model" :class="{'p-invalid':v$.email.$invalid && submitted}"/>
                     <label class="text-xl" for="email" :class="{'p-error':v$.email.$invalid && submitted}">Email*</label>
                 </span>
                 <small class="text-lg" v-if="(v$.email.$invalid && submitted) || v$.email.$pending.$response" :class="p-error">{{v$.email.required.$message.replace('Value', 'Email')}}</small>
             </div>
-            <div class="field" style="width:50vw">
-                <Textarea class="text-xl" rows="5" cols="30" placeholder="Tell us a some shit" v-model="v$.message.$model" :class="{'p-invalid':v$.message.$invalid && submitted}"/>
+            <div class="field" style="width:75%">
+                <Textarea class="" rows="5" cols="30" placeholder="Tell us what's up!" v-model="v$.message.$model" :class="{'p-invalid':v$.message.$invalid && submitted}"/>
                 <small class="text-lg" v-if="(v$.message.$invalid && submitted) || v$.message.$pending.$response" :class="p-error">{{v$.message.required.$message.replace('Value', 'Message')}}</small>
             </div>
-            <div class="field" style="width:50vw">
+            <!-- <div class="field" style="width:50vw">
                 <Toast position="center" group="tl"/>
                 <FileUpload name="demo[]" url="./upload.php" @upload="onUpload" :multiple="true" accept="image/*" :maxFileSize="100000000">
                     <template #empty>
                         <p>Drag and drop files to here to upload.</p>
                     </template>
                 </FileUpload>
-            </div>
+            </div> -->
             <Button :loading="loading" type="submit" label="Submit" class="p-button-raised p-button-success p-button-lg w-10rem mb-3" />
         </div>
     </form>
