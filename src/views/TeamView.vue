@@ -109,6 +109,24 @@
         </Card>
         <Card style="width: 25em">
             <template #header>
+                <div id="josiah" class="picture-grid-item h-30rem" style=""></div>
+            </template>
+            <template #title>
+                Josiah Hirsch
+            </template>
+            <template #subtitle>
+                Board Builder
+            </template>
+            <template #content>
+            <p> Since the day I received my first surfboard, I’ve had only two things on my mind: 
+
+waves, and the equipment we use to ride them. 
+
+Born and raised in Astoria, on the Northern Oregon coast, I didn’t begin surfing until I moved to Kaua’i at 19 years old. While on Kaua’i I became fascinated with surfing and surfboard design. I have always been crafty and artistic, and realized that making surfboards would be the ultimate manifestation of surf and my creative tendencies. Since that moment, I’ve spent every waking minute soaking up every ounce of board design knowledge I could take, and have found incredible fulfillment in building crafts that allow people to enjoy the seas.</p>
+            </template>
+        </Card>
+        <Card style="width: 25em">
+            <template #header>
                 <div id="aaron" class="picture-grid-item h-30rem" style=""></div>
             </template>
             <template #title>
@@ -182,6 +200,9 @@ a:hover {
 }
 #garner{
     background-image: url("@/assets/images/garner.jpg");
+}
+#josiah{
+    background-image: url("@/assets/images/josiah.jpg");
 }
 #aaron{
     background-image: url("@/assets/images/aaron2.png");

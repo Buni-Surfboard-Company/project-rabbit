@@ -111,7 +111,7 @@ Apparently, some people thought what Mason and I were doing was pretty cool. I h
     <div class="flex flex-column lg:flex-row grid-nogutter surface-section text-800 justify-content-center md:align-items-center">
         <div data-aos="fade-right" class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center lg:flex-order-1 md:flex-order-1 sm:flex-order-0">
             <section>
-                <div class="sm:text-3xl lg:text-5xl text-primary font-bold mb-3 text-right">The Embodient of Cody Maverick</div>
+                <div class="sm:text-3xl lg:text-5xl text-primary font-bold mb-3 text-right">The Embodiment of Cody Maverick</div>
                 <p class="mt-0 mb-4 sm:text-xl lg:text-2xl text-700 line-height-3 text-right">
 Then I met Beck Tankersely while looking for surfing buddies on the internet. A land-locked Texan turned Oregon Coast surf/skate rat who doesn't even understand the definition of fear but only understands froth. Whether in the water or in the bay, the man is pure stoke. Beck would come and visit me that next summer in Cannon Beach to shape his first board in the bay of Master Seaside Shaper, Tom Scott. 
                 </p>
