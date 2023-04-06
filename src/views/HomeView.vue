@@ -40,7 +40,7 @@
               <template #content>
                 <div style="background: rgba(33, 37, 41, 0.5);">
                   <h3 class="m-0 text-4xl lg:text-6xl">Come Make the World A Little Cleaner</h3>
-                  <p class="p-0 text-xl lg:text-3xl">Learn about our misson to one day become a zero-waste company</p>
+                  <p class="p-0 text-xl lg:text-3xl">Learn about our mission to one day become a zero-waste company</p>
                 </div>
                 <router-link to="/sustainability">
                 <Button label="Learn More"> </Button>
@@ -51,6 +51,23 @@
       </div>
     </swiper-slide>
     <swiper-slide>
+      <div class="swiper-container w-full h-full overflow-hidden">
+        <div class="swiper-img-container w-full h-full overflow-hidden" id="slide-four">
+          <Card data-aos="fade-down-left" class="absolute w-4 bottom-0 right-0 mb-6 shadow-none" style="background: transparent">
+              <template #content>
+                <div style="background: rgba(33, 37, 41, 0.5);">
+                  <h3 class="m-0 text-4xl lg:text-6xl">We're in the paper!</h3>
+                  <p class="p-0 text-xl lg:text-3xl">Checkout a recent piece on us and our vision.</p>
+                </div>
+                  <a target="_blank" href="https://www.gazettetimes.com/news/local/corvallis-surfers-put-a-green-spin-on-their-surfboard-biz/article_337db484-bf9e-11ed-baac-7399f4fea34d.html">
+                    <Button label="Read article"> </Button>
+                  </a>
+              </template>
+          </Card>
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- <swiper-slide>
       <div class="swiper-container w-full h-full overflow-hidden">
         <div class="swiper-img-container w-full h-full overflow-hidden" id="slide-two">
           <Card data-aos="fade-down-left" class="absolute w-4 bottom-0 right-0 mb-6 shadow-none" style="background: transparent">
@@ -64,7 +81,7 @@
           </Card>
         </div>
       </div>
-    </swiper-slide>
+    </swiper-slide> -->
   </swiper>
   
   <div class="h-screen relative">
@@ -78,9 +95,9 @@
             <router-link to="/surfboards">
               <Button label="Browse Surfboards" type="button" class="mr-3 p-button-raised"></Button>
             </router-link>
-            <router-link to="/products">
+            <a href="https://shop.buniboards.com/">
               <Button label="Browse Our Products" type="button" class="p-button-outlined"></Button>
-            </router-link>
+            </a>
         </section>
     </div>
     <div class="col-10 md:col-6 overflow-hidden z-4" >
@@ -107,9 +124,9 @@
           </router-link>
         </div>
         <div id="item-two" data-aos="fade-up-left" class="col picture-grid-item" style="">
-          <router-link to="/products">
+          <a href="https://shop.buniboards.com/">
           <Button label="Eco-Products" class="p-button-lg p-button-outlined p-button-primary hover:bg-primary text-primary hover:text-white" />
-        </router-link>
+          </a>
         </div>
     </div>
     <div class="grid bg-dark" style="min-height: 50vh; overflow: hidden; width: 100%; margin: auto">
@@ -228,6 +245,9 @@ import { onMounted } from 'vue'
 
 #slide-three{
   background-image: url(@/assets/images/beckSurfing.webp);
+}
+#slide-four{
+  background-image: url(@/assets/images/team-campus.jpeg);
 }
 
 h1 {

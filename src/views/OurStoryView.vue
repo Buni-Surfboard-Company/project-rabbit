@@ -2,7 +2,7 @@
 <div class="story-container bg-dark max-w-screen overflow-hidden">
   <div class="story-header surface-section px-4 py-8 md:px-6 lg:px-8 h-30rem">
       <div class="text-700 text-center">
-          <div class="text-900 font-bold sm:text-5xl lg:text-8xl mb-3">A Buni Stori</div>
+          <h1 class="text-900 font-bold sm:text-5xl lg:text-8xl mb-3">A Buni Stori</h1>
           <div class="text-700 font-bold sm:text-xl lg:text-5xl mb-5">By Parker Conrad</div>
       </div>
   </div>
@@ -105,7 +105,7 @@ Apparently, some people thought what Mason and I were doing was pretty cool. I h
             </section>
         </div>
         <div data-aos="fade-left" class="bg-dark col-12 md:col-6 overflow-hidden">
-            <img src="@/assets/images/fancy.png" alt="Image" class="w-100 md:ml-auto block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
+            <img src="@/assets/images/fred-park-film.jpg" alt="Image" class="w-100 md:ml-auto block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
         </div>
     </div>
     <div class="flex flex-column lg:flex-row grid-nogutter surface-section text-800 justify-content-center md:align-items-center">

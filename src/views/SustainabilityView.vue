@@ -96,7 +96,7 @@ export default {
 }
 
 .story-header{
-    background-image: url("@/assets/images/garners-board-drying-color.png");
+    background-image: url("@/assets/images/beck-glass-film.jpg");
     background-position: center;
     background-size: cover;
     background-color: black;
