@@ -1,5 +1,19 @@
 <template>
 
+<div class="banner bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
+    <div class="font-bold mr-8">🏄 BUNI Has a Shop!</div>
+    <div class="align-items-center hidden lg:flex">
+        <!-- <span class="line-height-3">Come checkout out our eco-friendly t-shirts and upcycled products.</span> -->
+        <span class="line-height-3">Check out the shred sleds for sale!</span>
+
+    </div>
+    <a class="flex align-items-center ml-2 mr-8">
+        <a class="text-white" href="https://shop.buniboards.com/"><span class="underline font-bold">Shop Now</span></a>
+    </a>
+    <!-- <a class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150 p-ripple" style="width:2rem; height: 2rem">
+        <i class="pi pi-times"></i>
+    </a> -->
+</div>
   <Menubar class="bg-dark sticky w-auto z-5 top-0 text-2xl" style="border-radius: 0; font-family: 'Bebas Neue'" :model="items">
     <template #start>
       <a href="/">
@@ -45,8 +59,8 @@
           <h6 class="text-uppercase font-weight-bold mb-3 text-2xl text-primary">Our Products</h6>
           <ul class="list-unstyled mb-0">
             <li class="mb-2"><a href="/surfboards" class="text-muted">Surfboards</a></li>
-            <li class="mb-2"><a href="/products" class="text-muted">Shirts</a></li>
-            <li class="mb-2"><a href="/products" class="text-muted">Waste Products</a></li>
+            <li class="mb-2"><a href="https://shop.buniboards.com/" class="text-muted">Shirts</a></li>
+            <li class="mb-2"><a href="https://shop.buniboards.com/" class="text-muted">Waste Products</a></li>
           </ul>
         </div>
       </div>
@@ -108,13 +122,13 @@ export default {
   setup() {
     const email = ref("")
     const items = ref([
-      {
-        label: 'Surfboards',
-        url: '/surfboards'
+    {
+        label: 'SHOP',
+        url: 'https://shop.buniboards.com/'
       },
       {
-        label: 'Eco-Products',
-        to: '/products'
+        label: 'Surfboards',
+        url: 'https://shop.buniboards.com/shop/surfboards/3?page=1&limit=60&sort_by=category_order&sort_order=asc'
       },
       {
         label: 'Services',
@@ -170,6 +184,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.banner{
+  font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html, body {

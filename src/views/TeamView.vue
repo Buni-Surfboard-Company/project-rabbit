@@ -127,6 +127,21 @@ Born and raised in Astoria, on the Northern Oregon coast, I didn’t begin surfi
         </Card>
         <Card style="width: 25em">
             <template #header>
+                <div id="katie" class="picture-grid-item h-30rem" style=""></div>
+            </template>
+            <template #title>
+                Katie Zagata
+            </template>
+            <template #subtitle>
+                Board Builder
+            </template>
+            <template #content>
+                <p>
+                    Katie grew up on the oregon coast and has had a passion for the ocean as long as long as she can remember, she loves to surf and snowboard and travel. She will be graduating with a degree in marine biology in the spring and hopes to pursue a career in having a damn good time wherever she ends up.                </p>
+            </template>
+        </Card>
+        <Card style="width: 25em">
+            <template #header>
                 <div id="aaron" class="picture-grid-item h-30rem" style=""></div>
             </template>
             <template #title>
@@ -187,7 +202,7 @@ a:hover {
 }
 
 #parker{
-    background-image: url("@/assets/images/pdawg.jpg");
+    background-image: url("@/assets/images/parker-black-board.jpg");
 }
 #mason{
     background-image: url("@/assets/images/mason.jpg");
@@ -203,6 +218,9 @@ a:hover {
 }
 #josiah{
     background-image: url("@/assets/images/josiah.jpg");
+}
+#katie{
+    background-image: url("@/assets/images/kt.jpeg");
 }
 #aaron{
     background-image: url("@/assets/images/aaron2.png");
