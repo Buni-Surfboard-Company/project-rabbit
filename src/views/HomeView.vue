@@ -1,4 +1,5 @@
 <template>
+  <ScrollTop />
   <swiper
     :modules="modules"
     :slides-per-view="1"

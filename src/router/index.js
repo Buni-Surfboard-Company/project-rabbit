@@ -54,6 +54,10 @@ const routes = [
     component: () =>import(/* webpackChunkName: "about" */ '../views/ProductView.vue')
   },
   {
+    path: '/swellproject',
+    component: () =>import(/* webpackChunkName: "about" */ '../views/SwellProjectView.vue')
+  },
+  {
     path: '/surfboards',
     component: SurfboardsView
   }

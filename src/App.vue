@@ -1,14 +1,14 @@
 <template>
 
 <div class="banner bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
-    <div class="font-bold mr-8">🏄 BUNI Has a Shop!</div>
+    <div class="font-bold mr-8">🏄 Want to help make surfing more accessible?</div>
     <div class="align-items-center hidden lg:flex">
         <!-- <span class="line-height-3">Come checkout out our eco-friendly t-shirts and upcycled products.</span> -->
-        <span class="line-height-3">Check out the shred sleds for sale!</span>
+        <span class="line-height-3">Come Support The Swell Project!</span>
 
     </div>
     <a class="flex align-items-center ml-2 mr-8">
-        <a class="text-white" href="https://shop.buniboards.com/"><span class="underline font-bold">Shop Now</span></a>
+        <a class="text-white" target="_blank" href="https://www.gofundme.com/f/support-underprivileged-surfers"><span class="underline font-bold">Help Now</span></a>
     </a>
     <!-- <a class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150 p-ripple" style="width:2rem; height: 2rem">
         <i class="pi pi-times"></i>
@@ -124,11 +124,16 @@ export default {
     const items = ref([
     {
         label: 'SHOP',
-        url: 'https://shop.buniboards.com/'
-      },
-      {
-        label: 'Surfboards',
-        url: 'https://shop.buniboards.com/shop/surfboards/3?page=1&limit=60&sort_by=category_order&sort_order=asc'
+        items: [
+          {
+            label: 'Surfboards',
+            url: 'https://shop.buniboards.com/shop/surfboards/3?page=1&limit=60&sort_by=category_order&sort_order=asc'
+          },
+          {
+            label:'Eco Products',
+            url: 'https://shop.buniboards.com/'
+          }
+        ],
       },
       {
         label: 'Services',
@@ -158,6 +163,10 @@ export default {
       {
         label: 'Buni & Sustainability',
         to: '/sustainability'
+      },
+      {
+        label: 'The Swell Project',
+        to: '/swellproject'
       }
     ])
 

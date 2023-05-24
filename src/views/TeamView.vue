@@ -38,9 +38,6 @@
                 Co-Founder / Board Builder
             </template>
             <template #content>
-                <p>
-                    <a class="no-underline hover:underline text-primary flex-order-1" href="mailto:mason@buniboards.com"><font-awesome-icon :icon="['fas', 'envelope']" size="xl"/> mason@buniboards.com</a>
-                </p>
                 <p>Born in Anchorage, Alaska and raised by rabid wolves, Mason is no stranger to danger. Growing up the young lad spent his summers in 
                     Arch Cape, Oregon longing for Pacific swells and an escape from the snow storms of the north. He moved to Arch Cape at 13 and 
                     found an affinity for board sports. His first passion was shredding the concrete tides on four wheels and an 8.75 plank, but fell in
@@ -118,6 +115,9 @@
                 Board Builder
             </template>
             <template #content>
+                <p>
+                    <a class="no-underline hover:underline text-primary flex-order-1" href="mailto:josiah@buniboards.com"><font-awesome-icon :icon="['fas', 'envelope']" size="xl"/> josiah@buniboards.com</a>
+                </p>
             <p> Since the day I received my first surfboard, I’ve had only two things on my mind: 
 
 waves, and the equipment we use to ride them. 
