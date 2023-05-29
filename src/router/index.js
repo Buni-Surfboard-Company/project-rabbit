@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 
 import SurfboardsView from '../views/SurfboardsView.vue'
 import SwellProjectView from '../views/SwellProjectView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
 
 const routes = [
   {
@@ -61,6 +62,12 @@ const routes = [
   {
     path: '/surfboards',
     component: SurfboardsView
+  },
+  {
+    path: '/404', name: 'NotFound', component: NotFoundView
+  },
+  {
+    path: '/:catchAll(.*)', redirect:'404'
   }
 ]
 

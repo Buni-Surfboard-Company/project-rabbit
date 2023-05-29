@@ -1,7 +1,7 @@
 <template>
     <ScrollTop />
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-    <div class="story-header surface-section px-4 py-8 md:px-6 lg:px-8 h-50rem">
+    <div class="story-header surface-section px-4 py-8 md:px-6 lg:px-8 h-50rem" id="swell-into">
         <div class="text-700 text-center pt-5" style="">
             <div class="text-primary font-bold sm:text-5xl md: text-5xl lg:text-8xl mb-3" style="background: rgba(33, 37, 41, 0.4);">The Swell Project</div>
             <div class="text-primary font-bold sm:text-xl lg:text-4xl mb-3" style="background: rgba(33, 37, 41, 0.4);">
@@ -164,7 +164,6 @@ export default {
 }
 
 .story-header{
-    background-image: url("@/assets/images/Marco_Bava_Stormy.jpg");
     background-position: center;
     background-size: cover;
     background-color: black;
@@ -176,6 +175,10 @@ export default {
     background-size: cover;
     background-color: black;
     height: 80vh;
+}
+
+#swell-intro{
+    background-image: url("@/assets/images/Marco_Bava_Stormy.jpg");
 }
 
 #what{
