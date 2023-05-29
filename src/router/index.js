@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 import SurfboardsView from '../views/SurfboardsView.vue'
+import SwellProjectView from '../views/SwellProjectView.vue'
 
 const routes = [
   {
@@ -55,7 +56,7 @@ const routes = [
   },
   {
     path: '/swellproject',
-    component: () =>import(/* webpackChunkName: "about" */ '../views/SwellProjectView.vue')
+    component: SwellProjectView
   },
   {
     path: '/surfboards',

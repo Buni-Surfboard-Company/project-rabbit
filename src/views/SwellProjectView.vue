@@ -10,15 +10,17 @@
         </div>
     </div>
     <div class="button-container" >
-    <a href="#what">
-        <Button label="What This Is" class="p-button-lg p-button-outlined p-button-primary hover:bg-primary text-primary hover:text-white" />
-    </a>
-    <a href="#oregon">
-        <Button label="The Oregon Initiative" class="p-button-lg p-button-outlined p-button-primary hover:bg-primary text-primary hover:text-white" />
-    </a>
-    <a href="#cuba">
-        <Button label="The Cuba Initiative" class="p-button-lg p-button-outlined p-button-primary hover:bg-primary text-primary hover:text-white"/>
-    </a>
+        <div v-if="!isMobile">
+            <a href="#what">
+                <Button label="What This Is" class="p-button-lg p-button-outlined p-button-primary hover:bg-primary text-primary hover:text-white" />
+            </a>
+            <a href="#oregon">
+                <Button label="The Oregon Initiative" class="p-button-lg p-button-outlined p-button-primary hover:bg-primary text-primary hover:text-white" />
+            </a>
+            <a href="#cuba">
+                <Button label="The Cuba Initiative" class="p-button-lg p-button-outlined p-button-primary hover:bg-primary text-primary hover:text-white"/>
+            </a>
+        </div>
     <a target="_blank" href="https://www.gofundme.com/f/support-underprivileged-surfers">
         <Button label="Support Now"/>
     </a>
@@ -27,7 +29,7 @@
     </div>
 
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-        <div class="info-header surface-section px-2 py-8 md:px-6 lg:px-8 h-50rem" id="what">
+        <div class="info-header surface-section px-2 py-1 md:px-6 lg:px-8 h-50rem" id="what">
         <div class="text-700 text-left pt-5" style="">
             <div class="text-primary font-bold sm:text-3xl md: text-4xl lg:text-7xl mb-3" style="background: rgba(33, 37, 41, 0.5);">What This Is</div>
             <p class="text-primary font-bold text-xs sm:text-lg md:text-lg lg:text-xl mb-3" style="background: rgba(33, 37, 41, 0.8);">
@@ -42,9 +44,15 @@
         </div>
     </div>
     </div>
+    <div v-if="isMobile">
+        <div class="story-container bg-dark max-w-screen overflow-hidden">
+            <div class="info-header surface-section px-2 py-8 md:px-6 lg:px-8 h-50rem" id="yenia">
 
+            </div>
+        </div>
+    </div>
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-        <div class="info-header surface-section px-2 py-8 md:px-6 lg:px-8 h-50rem" id="oregon">
+        <div class="info-header surface-section px-2 py-2 md:px-6 lg:px-8 h-50rem" id="oregon">
         <div class="text-700 text-left pt-5" style="">
             <div class="text-primary font-bold sm:text-3xl md: text-4xl lg:text-7xl mb-3" style="background: rgba(33, 37, 41, 0.5);">The Oregon Initiative</div>
             <p class="text-primary font-bold text-xs sm:text-md md:text-lg lg:text-xl mb-3" style="background: rgba(33, 37, 41, 0.9);">
@@ -54,8 +62,16 @@
     </div>
     </div>
 
+    <div v-if="isMobile">
+        <div class="story-container bg-dark max-w-screen overflow-hidden">
+            <div class="info-header surface-section px-2 py-8 md:px-6 lg:px-8 h-50rem" id="frank">
+
+            </div>
+        </div>
+    </div>
+
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-        <div class="info-header surface-section px-2 py-8 md:px-6 lg:px-8 h-50rem" id="cuba">
+        <div class="info-header surface-section px-2 py-2 md:px-6 lg:px-8 h-50rem" id="cuba">
         <div class="text-700 text-left pt-5" style="">
             <div class="text-primary font-bold sm:text-3xl md: text-4xl lg:text-7xl mb-3" style="background: rgba(33, 37, 41, 0.5);">The Cuba Initiative</div>
             <p class="text-primary font-bold text-xs sm:text-md md:text-lg lg:text-xl mb-3" style="background: rgba(33, 37, 41, 0.9);">
@@ -104,11 +120,38 @@
         </div>
     </div>
     </div>
+    <div v-if="isMobile">
+        <div class="story-container bg-dark max-w-screen overflow-hidden">
+            <div class="info-header surface-section px-2 py-8 md:px-6 lg:px-8 h-50rem" id="kiddos">
+
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 export default {
+    setup() {
+    const isMobile = ref(false);
 
+    const checkMobile = () => {
+      isMobile.value = window.matchMedia("(max-width: 768px)").matches;
+    };
+
+    onMounted(() => {
+      checkMobile();
+      window.addEventListener("resize", checkMobile);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener("resize", checkMobile);
+    });
+
+    return {
+      isMobile
+    };
+  }
 }
 </script>
 
@@ -147,6 +190,16 @@ export default {
 #cuba{
     background-image: url("@/assets/images/Marco_Bava_Loaded.jpg");
 
+}
+
+#yenia{
+    background-image: url("@/assets/images/Yenia_Surfboard.gif");
+}
+#frank{
+    background-image: url("@/assets/images/frank_surfing.gif");
+}
+#kiddos{
+    background-image: url("@/assets/images/kids_surfing.gif");
 }
 
 

@@ -1,7 +1,7 @@
 <template>
 
 <div class="banner bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
-    <div class="font-bold mr-8">🏄 Want to help make surfing more accessible?</div>
+    <div class="font-bold mr-5">🏄Make surfing more accessible!</div>
     <div class="align-items-center hidden lg:flex">
         <!-- <span class="line-height-3">Come checkout out our eco-friendly t-shirts and upcycled products.</span> -->
         <span class="line-height-3">Come Support The Swell Project!</span>
