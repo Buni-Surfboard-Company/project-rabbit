@@ -79,6 +79,12 @@ const paths = [
     lastmod: '2022-10-10',
     priority: 0.9,
     changefreq: 'yearly'
+  },
+  {
+    path: '/swellproject/',
+    lastmod: '2023-05-25',
+    priority: 0.9,
+    changefreq: 'yearly'
   }
 ]
 module.exports = defineConfig({

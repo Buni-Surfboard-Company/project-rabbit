@@ -22,6 +22,7 @@ import ProgressSpinner from 'primevue/progressspinner'
 import Toast from 'primevue/toast'
 import Image from 'primevue/image'
 import InputMask from 'primevue/inputmask';
+import ScrollTop from 'primevue/scrolltop';
 
 import VCalendar from 'v-calendar';
 
@@ -52,6 +53,7 @@ createApp(App)
 .component('Toast', Toast)
 .component('Image', Image)
 .component("InputMask", InputMask)
+.component("ScrollTop", ScrollTop)
 .directive('tooltip', Tooltip)
 .use(store).use(VCalendar, {}).use(router).use(VueKinesis).component("font-awesome-icon", FontAwesomeIcon).use(ToastService).use(PrimeVue)
 .mount('#app')
