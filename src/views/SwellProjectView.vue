@@ -1,7 +1,7 @@
 <template>
     <ScrollTop />
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-    <div class="story-header surface-section px-4 py-8 md:px-6 lg:px-8 h-50rem" id="swell-into">
+    <div class="story-header surface-section px-4 py-8 md:px-6 lg:px-8 h-50rem" id="swell-intro">
         <div class="text-700 text-center pt-5" style="">
             <div class="text-primary font-bold sm:text-5xl md: text-5xl lg:text-8xl mb-3" style="background: rgba(33, 37, 41, 0.4);">The Swell Project</div>
             <div class="text-primary font-bold sm:text-xl lg:text-4xl mb-3" style="background: rgba(33, 37, 41, 0.4);">
@@ -29,8 +29,8 @@
     </div>
 
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-        <div class="info-header surface-section px-2 py-1 md:px-6 lg:px-8 h-50rem" id="what">
-        <div class="text-700 text-left pt-5" style="">
+        <div class="info-header surface-section px-0 py-1 md:px-6 lg:px-8 h-50rem" id="what">
+        <div class="text-700 text-left pt-2" style="">
             <div class="text-primary font-bold sm:text-3xl md: text-4xl lg:text-7xl mb-3" style="background: rgba(33, 37, 41, 0.5);">What This Is</div>
             <p class="text-primary font-bold text-xs sm:text-lg md:text-lg lg:text-xl mb-3" style="background: rgba(33, 37, 41, 0.8);">
                 Being a surfer is understanding that you are in the lucky few who have the opportunity to pursue a deeper connection with the ocean. Whether it be the bone-chilling fear of a black wave face showing its teeth, the exhaustive disappointment of an unsuccessful paddle, or the indescribable “stoke” of that elusive ride, surfing is a microcosm of the emotional peaks and valleys we traverse throughout our lives. 
@@ -52,11 +52,16 @@
         </div>
     </div>
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-        <div class="info-header surface-section px-2 py-2 md:px-6 lg:px-8 h-50rem" id="oregon">
-        <div class="text-700 text-left pt-5" style="">
+        <div class="info-header surface-section px-2 py-0 md:px-6 lg:px-8 h-50rem" id="oregon">
+        <div class="text-700 text-left pt-1" style="">
             <div class="text-primary font-bold sm:text-3xl md: text-4xl lg:text-7xl mb-3" style="background: rgba(33, 37, 41, 0.5);">The Oregon Initiative</div>
             <p class="text-primary font-bold text-xs sm:text-md md:text-lg lg:text-xl mb-3" style="background: rgba(33, 37, 41, 0.9);">
-                COMING SOON...
+                Born from the shores of Hawaii, surfboards were originally built to entertain the royalty of the Pacific. Once reserved for the elite, surfing has infected the Western world with flip-flop lifestyles and a deeper love for the planet’s most incredible asset, the Ocean. However, if you walked into a big name surfshop today, you would still believe the sport was reserved for kings and queens. Surfing is one of those action sports where the entry fee for quality gear seems downright disrespectful. But unlike almost every other sport, once you have the gear you are free to surf wherever you’d like!
+                <br/>
+                <br/>
+                For these simple reasons, Buni is motivated to provide that initial step into the world of surfing for the next generation of surfers.
+                 <u>Our goal is to collect donations of gear or funds in order to provide young surfers in low-income communities with the proper tools to become a 
+                 lifelong surfer.</u> It has been proven that providing individuals, no matter the age, with meaningful outlets of expression, exercise, and community, brings out the best in them. Whether surfing motivates an individual to start making more art for their grandma, or brings them closer to understanding marine biology, or simply means they have a safe community of friends to rely on any day of the week, Buni does not discriminate. Everyone deserves to have a meaningful life (and a little fun), so we would like to share what we know best, Surfing. 
             </p>
         </div>
     </div>
@@ -71,8 +76,8 @@
     </div>
 
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-        <div class="info-header surface-section px-2 py-2 md:px-6 lg:px-8 h-50rem" id="cuba">
-        <div class="text-700 text-left pt-5" style="">
+        <div class="info-header surface-section px-2 py-0 md:px-6 lg:px-8 h-50rem" id="cuba">
+        <div class="text-700 text-left pt-1" style="">
             <div class="text-primary font-bold sm:text-3xl md: text-4xl lg:text-7xl mb-3" style="background: rgba(33, 37, 41, 0.5);">The Cuba Initiative</div>
             <p class="text-primary font-bold text-xs sm:text-md md:text-lg lg:text-xl mb-3" style="background: rgba(33, 37, 41, 0.9);">
                 Despite being an island nation,
@@ -116,6 +121,11 @@
                 that there are nothing but
                 good waves on your
                 horizons.
+                <br/>
+                <br/>
+                We are proud to be partnering with Makewild Films and The Havana Libre Project.
+                To find out more about the steps these organization have done so far to help legitimize surfing in Cuba,
+                please visit <a target="_blank" href="https://havanalibre.film">https://havanalibre.film</a>
             </p>
         </div>
     </div>
@@ -164,6 +174,7 @@ export default {
 }
 
 .story-header{
+    
     background-position: center;
     background-size: cover;
     background-color: black;
