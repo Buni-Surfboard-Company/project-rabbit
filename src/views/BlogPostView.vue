@@ -6,6 +6,11 @@
     <template #content>
       <div class="m-0" v-html="renderHtml(post.content)"></div>
     </template>
+    <template #footer>
+      <router-link to="/blog">
+          <Button icon="pi pi-arrow-left" label="Back to Blog" />
+      </router-link>
+    </template>
 </Card>
     </div>
   </template>
