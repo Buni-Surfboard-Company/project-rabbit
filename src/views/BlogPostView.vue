@@ -47,5 +47,6 @@
 .p-card{
   width: 50%;
     margin: auto;
+  text-align: left;
 }
 </style>
