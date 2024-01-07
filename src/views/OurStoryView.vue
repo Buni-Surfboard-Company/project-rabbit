@@ -435,7 +435,7 @@ export default {
 }
 
 .story-header{
-    background-image: url("@/assets/images/walking-into-water.JPG");
+    background-image: url("@/assets/images/walking-into-water.jpeg");
     background-position: center;
     background-size: cover;
     background-color: black;

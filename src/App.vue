@@ -45,6 +45,7 @@
             <li class="mb-2"><a href="/contact" class="text-muted">Contact Us</a></li>
             <li class="mb-2"><a href="/ourstory" class="text-muted">Our Story</a></li>
             <li class="mb-2"><a href="/sustainability" class="text-muted">Buni and Sustainability</a></li>
+            <li class="mb-2"><a href="/blog" class="text-muted">Buni Blog</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
@@ -167,6 +168,10 @@ export default {
       {
         label: 'The Swell Project',
         to: '/swellproject'
+      },
+      {
+        label: 'Blog',
+        to: '/blog'
       }
     ])
 

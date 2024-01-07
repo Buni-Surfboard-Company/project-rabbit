@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import SurfboardsView from '../views/SurfboardsView.vue'
 import SwellProjectView from '../views/SwellProjectView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
+import BlogPostView from '../views/BlogPostView.vue'
 
 const routes = [
   {
@@ -62,6 +63,15 @@ const routes = [
   {
     path: '/surfboards',
     component: SurfboardsView
+  },
+  {
+    path: '/blog',
+    component: () =>import(/* webpackChunkName: "about" */ '../views/BlogView.vue')
+  },
+  {
+    path: '/blog/post/:id',
+    component: BlogPostView,
+    name: 'BlogPost'
   },
   {
     path: '/404', name: 'NotFound', component: NotFoundView

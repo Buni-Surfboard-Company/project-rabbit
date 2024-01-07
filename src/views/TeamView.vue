@@ -208,7 +208,7 @@ a:hover {
     background-image: url("@/assets/images/mason.jpg");
 }
 #frederick{
-    background-image: url("@/assets/images/frederick.JPG");
+    background-image: url("@/assets/images/frederick.jpeg");
 }
 #beck{
     background-image: url("@/assets/images/beck.jpg");

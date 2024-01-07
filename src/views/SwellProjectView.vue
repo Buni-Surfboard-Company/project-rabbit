@@ -1,7 +1,7 @@
 <template>
     <ScrollTop />
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-    <div class="story-header surface-section px-4 py-8 md:px-6 lg:px-8 h-50rem" id="swell-into">
+    <div class="story-header surface-section px-4 py-8 md:px-6 lg:px-8 h-50rem" id="swell-intro">
         <div class="text-700 text-center pt-5" style="">
             <div class="text-primary font-bold sm:text-5xl md: text-5xl lg:text-8xl mb-3" style="background: rgba(33, 37, 41, 0.4);">The Swell Project</div>
             <div class="text-primary font-bold sm:text-xl lg:text-4xl mb-3" style="background: rgba(33, 37, 41, 0.4);">
@@ -29,8 +29,8 @@
     </div>
 
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-        <div class="info-header surface-section px-2 py-1 md:px-6 lg:px-8 h-50rem" id="what">
-        <div class="text-700 text-left pt-5" style="">
+        <div class="info-header surface-section px-0 py-1 md:px-6 lg:px-8 h-50rem" id="what">
+        <div class="text-700 text-left pt-2" style="">
             <div class="text-primary font-bold sm:text-3xl md: text-4xl lg:text-7xl mb-3" style="background: rgba(33, 37, 41, 0.5);">What This Is</div>
             <p class="text-primary font-bold text-xs sm:text-lg md:text-lg lg:text-xl mb-3" style="background: rgba(33, 37, 41, 0.8);">
                 Being a surfer is understanding that you are in the lucky few who have the opportunity to pursue a deeper connection with the ocean. Whether it be the bone-chilling fear of a black wave face showing its teeth, the exhaustive disappointment of an unsuccessful paddle, or the indescribable “stoke” of that elusive ride, surfing is a microcosm of the emotional peaks and valleys we traverse throughout our lives. 
@@ -76,8 +76,8 @@
     </div>
 
     <div class="story-container bg-dark max-w-screen overflow-hidden">
-        <div class="info-header surface-section px-2 py-2 md:px-6 lg:px-8 h-50rem" id="cuba">
-        <div class="text-700 text-left pt-5" style="">
+        <div class="info-header surface-section px-2 py-0 md:px-6 lg:px-8 h-50rem" id="cuba">
+        <div class="text-700 text-left pt-1" style="">
             <div class="text-primary font-bold sm:text-3xl md: text-4xl lg:text-7xl mb-3" style="background: rgba(33, 37, 41, 0.5);">The Cuba Initiative</div>
             <p class="text-primary font-bold text-xs sm:text-md md:text-lg lg:text-xl mb-3" style="background: rgba(33, 37, 41, 0.9);">
                 Despite being an island nation,
@@ -121,6 +121,11 @@
                 that there are nothing but
                 good waves on your
                 horizons.
+                <br/>
+                <br/>
+                We are proud to be partnering with Makewild Films and The Havana Libre Project.
+                To find out more about the steps these organization have done so far to help legitimize surfing in Cuba,
+                please visit <a target="_blank" href="https://havanalibre.film">https://havanalibre.film</a>
             </p>
         </div>
     </div>
@@ -169,6 +174,7 @@ export default {
 }
 
 .story-header{
+    
     background-position: center;
     background-size: cover;
     background-color: black;
