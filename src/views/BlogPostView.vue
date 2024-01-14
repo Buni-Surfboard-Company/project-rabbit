@@ -49,4 +49,12 @@
     margin: auto;
   text-align: left;
 }
+
+@media (max-width: 700px) {
+  .p-card {
+    width: 100%;
+    margin: auto;
+  text-align: left;
+}
+}
 </style>

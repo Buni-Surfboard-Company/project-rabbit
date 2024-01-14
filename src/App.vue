@@ -83,7 +83,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <span>Copyright © Buni Surfboard Company LLC 2023, All Right Reserved</span>
+                        <span>Copyright © Buni Surfboard Company LLC 2024, All Right Reserved</span>
                     </div>
                     <!-- End Col -->
                     <div class="col-md-6">
