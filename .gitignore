@@ -25,3 +25,7 @@ pnpm-debug.log*
 
 *.jpg
 *.jpeg
+
+.firebase
+*.cache
+.firebase/hosting.ZGlzdA.cache
