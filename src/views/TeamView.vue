@@ -27,28 +27,6 @@
         </Card>
         <Card style="width: 25em">
             <template #header>
-                <div id="mason" class="picture-grid-item h-30rem" style="">
-
-                </div>
-            </template>
-            <template #title>
-                Mason Crawford
-            </template>
-            <template #subtitle>
-                Co-Founder / Board Builder
-            </template>
-            <template #content>
-                <p>Born in Anchorage, Alaska and raised by rabid wolves, Mason is no stranger to danger. Growing up the young lad spent his summers in 
-                    Arch Cape, Oregon longing for Pacific swells and an escape from the snow storms of the north. He moved to Arch Cape at 13 and 
-                    found an affinity for board sports. His first passion was shredding the concrete tides on four wheels and an 8.75 plank, but fell in
-                     love with surfing after learning the hard way that water is more welcoming than asphalt. Currently a Psychology student at 
-                     Oregon State University, Mason plans to bring awareness to the psychological struggles all humans experience and find new ways to
-                      improve the lives of those in need. The young man may be accident prone, but his perseverance and love for sharing froth will ensure that anyone interested in surfing will be graciously adopted into this cult of stoke.
-                     (Also, he is the best fur father to the cutest rescue dog. Soon enough he will have Asta the mutt pup on a board cheating a 5!)</p>
-            </template>
-        </Card>
-        <Card style="width: 25em">
-            <template #header>
                 <div id="frederick" class="picture-grid-item h-30rem" style=""></div>
             </template>
             <template #title>
@@ -64,6 +42,28 @@
                 <p>New York City born and raised, Frederick grew up surfing the golden beaches of Flying Point, Long Island. Frustrated with his access to 
                     raw nature in the Big Apple, Frederick made his way to Deerfield, Massachusetts for high school, and eventually followed his heart 
                     and family to Central Oregon. Currently studying mechanical engineering at Oregon State University, Frederick has found a calling in composites research and manufacturing. When he isn't making carbon-fiber car parts, you will find him laying pristine sheets of fiberglass on hand shaped surfboards. Side note: If you ever run into Frederick make sure to ask him about Buni sustainability, as it is his goal of focus for the company!</p>
+            </template>
+        </Card>
+        <Card style="width: 25em">
+            <template #header>
+                <div id="mason" class="picture-grid-item h-30rem" style="">
+
+                </div>
+            </template>
+            <template #title>
+                Mason Crawford
+            </template>
+            <template #subtitle>
+                Emeritus Co-Founder
+            </template>
+            <template #content>
+                <p>Born in Anchorage, Alaska and raised by rabid wolves, Mason is no stranger to danger. Growing up the young lad spent his summers in 
+                    Arch Cape, Oregon longing for Pacific swells and an escape from the snow storms of the north. He moved to Arch Cape at 13 and 
+                    found an affinity for board sports. His first passion was shredding the concrete tides on four wheels and an 8.75 plank, but fell in
+                     love with surfing after learning the hard way that water is more welcoming than asphalt. Currently a Psychology student at 
+                     Oregon State University, Mason plans to bring awareness to the psychological struggles all humans experience and find new ways to
+                      improve the lives of those in need. The young man may be accident prone, but his perseverance and love for sharing froth will ensure that anyone interested in surfing will be graciously adopted into this cult of stoke.
+                     (Also, he is the best fur father to the cutest rescue dog. Soon enough he will have Asta the mutt pup on a board cheating a 5!)</p>
             </template>
         </Card>
         <Card style="width: 25em">
